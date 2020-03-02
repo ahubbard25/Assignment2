@@ -3,7 +3,7 @@ public with sharing class ExchangeRates {
     Http h = new Http();
     HttpRequest req = new HttpRequest();
     //request endpoint URL
-    req.setEndpoint('https://api.exchangeratesapi.io/history?start_at=2018-01-01&end_at=2018-07-01&base=USD&symbols=CAD');
+    req.setEndpoint('https://api.exchangeratesapi.io/history?start_at=2018-01-01&end_at=2019-07-01&base=USD&symbols=CAD');
     //request GET method
     req.setMethod('GET');
     HttpResponse res = h.send(req);
